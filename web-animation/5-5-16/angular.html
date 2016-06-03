@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <title>Angular Demo</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <form>
+    Name: <input ng-model="name" placeholder="Name"></input> <br />
+    Place: <input ng-model="place" placeholder="Place"></input> <br />
+    Friends Name: <input ng-model="Fname" placeholder="Friends Name"></input> <br />
+    Place you travel for: <input ng-model="Place" placeholder="Place"></input> <br />
+    Ride: <input ng-model="ride" placeholder="Ride"></input> <br />
+    Sport: <input ng-model="sport" placeholder="Sport"></input> <br />
+    Activity 1: <input ng-model="ac1" placeholder="Activity 1"></input> <br />
+    Activity 2: <input ng-model="ac2" placeholder="Activity 2"></input> <br />
+    Activity for Dads: <input ng-model="acD" placeholder="Activity for Dads"></input> <br />
+    Activity for Moms: <input ng-model="acM" placeholder="Activity for Moms"></input> <br />
+    Area with hole: <input ng-model="hole" placeholder="Area with hole"></input> <br />
+    Family Activity: <input ng-model="acF" placeholder="Family Activity"></input> <br />
+    Activity for self: <input ng-model="acS" placeholder="Activity for self"></input> <br />
+    Activity for Parents: <input ng-model="acP" placeholder="Activity for Parents"></input> <br />
+    Number of hours: <input ng-model="hours" placeholder="Number of hours"></input> <br />
+    Money: <input ng-model="money" placeholder="Money"></input> <br />
+  </form>
+
+  <p>{{ name }} took a trip to {{ place }}
+with {{ Fname }}. Usually you go to some place
+that is near a/an {{ Place }}.
+A good vacation place is one where you can ride {{ ride }} 
+or play {{ sport }}. I like
+to spend my time {{ ac1 }} or {{ ac2 }}.
+When parents go on a vacation, fathers play {{ acD }}, and mothers
+{{ acM }}. Last summer, my little brother
+fell in a/an {{ hole }}. My family is going to go to (the)
+{{ acF }} , and I will go to the {{ acS }}. Parents
+need vacations more than kids because parents are always
+{{ acP }} and because they have to work {{ hours }} 
+hours every day all year and only make {{ money }}.</p>
+
+</body>
+</html>
